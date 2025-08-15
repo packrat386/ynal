@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>YNAL: {{ .Title }}</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+  </head>
+  <body>
+    <h2>License: {{ .Title }}</h2>
+    <p>To add this to your project run:</p>
+    <pre>curl -s --output LICENSE.txt https://ynal.packrat386.com{{ .URL }}</pre>
+    <hr>
+    <pre>{{ .Text }}</pre>
+    <hr>
+    <p><a href="/">Home</a></p>
+  </body>
+</html>
