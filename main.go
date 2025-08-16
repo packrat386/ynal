@@ -37,6 +37,7 @@ func main() {
 		Handler: withLogging(h),
 	}
 
+	log.Println("listening on: ", srv.Addr)
 	if err := srv.ListenAndServe(); err != http.ErrServerClosed {
 		panic(err)
 	}
